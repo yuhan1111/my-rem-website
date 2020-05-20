@@ -1,0 +1,150 @@
+@import "common";
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+    background: #f2f2f2;
+}
+.open {
+    display: block;
+}
+.close {
+    display: none;
+}
+
+@fontbase: 50rem;
+.header {
+    position: relative;
+    margin-top: 25 / @fontbase;
+    height: 60 / @fontbase;
+    font-size: 24 / @fontbase;
+    width: 100%;
+    .service-contact {
+        position: absolute;
+        right: 0;
+        border-right: 2px solid #ccc;
+        padding-right: 25 / @fontbase;
+        margin-right: 150 / @fontbase;
+        a {
+            color: #222222;
+        }
+
+    }
+    .company-register {
+        position: absolute;
+        padding: 0 25 / @fontbase;
+        right: 0;
+        a {
+            color: #222222;
+        }
+
+    }
+
+}
+.loginbox {
+    width: 100%;
+    h5 {
+        width: 80%;
+        margin: 50 / @fontbase auto;
+        font-size: 28 / @fontbase;
+        font-weight: normal;
+        color: #222222;
+
+    }
+    
+    form {
+        position: relative;
+        width: 80%;
+        margin: 20 / @fontbase auto;
+        .del-ico1 {
+            position: absolute;
+            display: none;
+            top: 20 / @fontbase;
+            right: 0;
+            width: 42 / @fontbase;
+            height: 42 / @fontbase;
+            background: url(../images/delete-ico.png) no-repeat center center;
+            background-size: 42 / @fontbase 42 / @fontbase; 
+            
+        }
+        .del-ico2 {
+            top: 122 / @fontbase;
+            display: none;
+            right: 180 / @fontbase;
+            width: 42 / @fontbase;
+            height: 42 / @fontbase;
+            position: absolute;
+            background: url(../images/delete-ico.png) no-repeat center center;
+            background-size: 42 / @fontbase 42 / @fontbase; 
+        }
+        .eye-open {
+            position: absolute;
+            display: none;
+            width: 42 / @fontbase;
+            top: 128 / @fontbase;
+            right: 118 / @fontbase;
+
+        }
+        .eye-close {
+            position: absolute;
+            display: block;
+            width: 42 / @fontbase;
+            top: 128 / @fontbase;
+            right: 118 / @fontbase;
+        }
+        p {
+            position: absolute;
+            top: 125 / @fontbase;
+            right: 0;
+            font-size: 22 / @fontbase;
+        }
+        
+        .username {
+            margin-top: 20 / @fontbase;
+            box-sizing: border-box;
+            display: block;
+            position: relative;
+            outline: none;
+            width: 100%;
+            height: 80 / @fontbase;
+            font-size: 22 / @fontbase;
+            padding-left: 10 / @fontbase;
+            padding-right: 100 / @fontbase;
+            border: none;
+            background-color: #f2f2f2;
+            color: #ccc;
+            border-bottom: 1 / @fontbase solid #dddddd;    
+        }
+        .passwordbox {
+            box-sizing: border-box;
+            display: block;
+            outline: none;
+            width: 100%;
+            margin-top: 20 / @fontbase;
+            height: 80 / @fontbase;
+            font-size: 22 / @fontbase;
+            padding-left: 10 / @fontbase;
+            padding-right: 300 / @fontbase;
+            border: none;
+            background-color: #f2f2f2;
+            color: #ccc;
+            border-bottom: 1 / @fontbase solid #dddddd;
+
+        }
+        .submitbox {
+            display: block;
+            width: 100%;
+            margin-top: 60 / @fontbase;
+            height: 80 / @fontbase;
+            background-color: #ffcc00;
+            font-size: 26 / @fontbase;
+            font-weight: 700;
+            border: none;
+            border-radius: 20 / @fontbase;
+            
+
+        }
+    }
+}

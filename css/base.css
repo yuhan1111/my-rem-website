@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
+    background: #f2f2f2;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+ :-moz-placeholder {
+    color: #ccc;
+}
+
+ ::-moz-placeholder {
+    color: #ccc;
+}
+
+ :-ms-input-placeholder {
+    color: red;
+}

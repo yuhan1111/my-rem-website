@@ -1,0 +1,174 @@
+@import "common";
+//@import后面有一个空格
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+    background: #f2f2f2;
+}
+// 顶部搜索框
+@fontbase: 50;
+.search-content {
+    display: flex;
+    position: fixed;
+    z-index: 12;
+    left: 50%;
+    top: 0%;
+    transform: translateX(-50%);
+    width: 15rem;
+    height: 88rem / @fontbase;
+    background-color: #FFC001;
+    .classify {
+        width: 36rem / @fontbase;
+        height: 60rem / @fontbase;
+        margin: 12em / @fontbase 25em / @fontbase 10em / @fontbase 25em / @fontbase;
+        background: url(../images/fen.png);
+        background-size: 36rem / @fontbase auto;
+        
+    }
+    .search {
+        flex: 1;
+        display: flex;
+        text-decoration: none;
+        background-color: #ffffff;
+        line-height: 0;
+        color: #75758b;
+        font-size: 30rem / @fontbase;
+        border-radius: 58rem / @fontbase;
+        height: 58rem / @fontbase;
+        margin: 15rem / @fontbase 0 / @fontbase 15rem / @fontbase;
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 36rem / @fontbase;
+            height: 36rem / @fontbase;
+            margin: 11rem / @fontbase 11rem / @fontbase 11rem / @fontbase 30rem / @fontbase;
+            background: url(../images/search.png) no-repeat center center;
+            background-size: 36rem / @fontbase auto;
+            
+
+        }
+        &::after {
+            flex: 1;
+            content: '抢3000元手机券';
+            display: inline-block;
+            height: 36rem / @fontbase;
+            line-height: 36rem / @fontbase;
+            margin: 11rem / @fontbase 0;
+
+        }
+    }
+    .log {
+        width: 36rem / @fontbase;
+        height: 60rem / @fontbase;
+        margin: 12em / @fontbase 25em / @fontbase 10em / @fontbase 25em / @fontbase;
+        background: url(../images/log.png);
+        background-size: 36rem / @fontbase;
+    }
+}
+// 焦点图
+.banner {
+    margin-top: 98rem / @fontbase;
+    .swiper-container {
+        .swiper-pagination {
+            .swiper-pagination-bullet {
+                width: 20rem / @fontbase;
+                height: 20rem / @fontbase;
+                border-radius: 100%;
+            }
+        }
+        .swiper-wrapper {
+            
+            .swiper-slide {  
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;             
+                img {
+                    border-radius: 20rem / @fontbase;
+                    width: 712.5rem / @fontbase;
+                    height: 349.6rem / @fontbase;
+                }
+            }
+        }
+        
+    }
+   
+}
+// nav
+.nav {
+    width: 750rem / @fontbase;
+    height: 280rem / @fontbase;
+    margin-top: 30rem / @fontbase;
+    .fix{
+        a {
+            display: block;
+            float: left;
+            text-align: center;         
+            width: 150rem / @fontbase;
+            height: 140rem / @fontbase;
+            .enter-ico {           
+                img {
+                    width: 84rem / @fontbase;
+                    height: 84rem / @fontbase;
+                    vertical-align: middle;
+                }           
+            }
+            .title {
+                text-align: center;
+                width: 150rem / @fontbase;
+                height: 28rem / @fontbase;
+                color: #7d7d7d;
+                font-size: 25rem / @fontbase;
+            }
+        }
+    }
+}
+// guide
+.guide {
+    border-top: 1px solid #ccc;
+    position: fixed;
+    background-color: whitesmoke;
+    bottom: 0rem;
+    z-index: 11;
+    width: 750rem / @fontbase;
+    height: 100rem / @fontbase;
+    .guide-ul {
+        li {
+            a {
+                float: left;
+                width: 150rem / @fontbase;
+                .guide-ico {
+                    width: 150rem / @fontbase;  
+                    height: 48rem / @fontbase;
+                    text-align: center; 
+                    vertical-align: middle;
+                    img {
+                        width: 48rem / @fontbase;
+                        height: 48rem / @fontbase;
+                    }
+
+                }
+                .guide-discription {
+                    color: #666666;
+                    margin-top: 10rem / @fontbase;
+                    width: 150rem / @fontbase;
+                    height: 31.43rem / @fontbase;
+                    font-size: 28rem / @fontbase;
+                    text-align: center;
+                    line-height: 31rem / @fontbase;
+                }
+            }
+        }
+    }
+}
